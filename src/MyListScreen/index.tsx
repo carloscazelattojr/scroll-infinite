@@ -32,6 +32,9 @@ export default function MyListScreen() {
     }
 
     const onRefresh = () => {
+        if (loading) {
+            return;
+        }
         setItems([]);
         setNextPage(initialPage);
         fetchPage(initialPage);
