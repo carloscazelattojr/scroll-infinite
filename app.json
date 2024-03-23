@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "scroll-infinity",
-    "slug": "scroll-infinity",
+    "name": "scroll-infinite",
+    "slug": "scroll-infinite",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
