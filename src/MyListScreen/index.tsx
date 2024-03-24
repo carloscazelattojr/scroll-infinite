@@ -44,11 +44,6 @@ export default function MyListScreen() {
         fetchPage(initialPage);
     }, [])
 
-
-    // if (loading) {
-    //     return <ActivityIndicator style={styles.containerLoading} color="#b2daed" size={100} />
-    // }
-
     return (
         <FlatList
             style={{ marginTop: 40 }}
@@ -61,6 +56,8 @@ export default function MyListScreen() {
             //debug={true}
             refreshing={loading}
             onRefresh={onRefresh}
+            removeClippedSubviews={true}
+            initialNumToRender={3}
         />
     );
 }
